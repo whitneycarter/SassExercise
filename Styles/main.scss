@@ -1,0 +1,36 @@
+
+@import "values";
+
+.main {
+    background: tan;
+    h1 {
+        color: #ddd;
+        &:hover {
+            @extend %center
+        }
+        
+    }
+    h2 {
+        background: $brown1;
+        
+    }
+
+    
+    h3 {
+        color: $brown1;
+    }
+}
+
+.minor {
+    background: silver;
+    h1 {
+        text-decoration: underline;
+        margin-bottom: calc(25px * 4);
+        @extend %center
+        
+    }
+    h2 {
+        text-decoration: line-through;
+        @extend %center
+    }
+}
